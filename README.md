@@ -17,22 +17,22 @@ Once you are on the  website, create a new file by clicking on the "file" icon i
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
-contract error {
-    function testRequire(uint _value) public pure{
 
+        contract error {
+        function testRequire(uint _value) public pure{
         require( _value>20, "Input must be greater than 20");
         }
-    function testRevert(uint _value) public pure {
-    if( _value<= 100){
-        revert("Input must be greater than 100");
-    }
-    }
-    uint public num;
-    function testAssert() public view{
-    assert(num== 0);
-    
-    }
-    }
+        function testRevert(uint _value) public pure {
+        if( _value<= 100){
+            revert("Input must be greater than 100");
+        }
+        }
+        uint public num;
+        function testAssert() public view{
+        assert(num== 0);
+        
+        }
+        }
 
 To compile the code, press CRTL+ SHIFT+P  then select Solidity compile contract and the program is compile sucessfully will be shown in console 
 ## Authors
