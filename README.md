@@ -1,4 +1,4 @@
-# internediate_EVM_Metacrafter
+# intermediate_EVM_Metacrafter
 # Functions and Errors 
 
 This Solidity program is a simple "Error handling " program that demonstrates the basic syntax and functionality of error handing in the Solidity programming language. The purpose of this program to demonstrate how error handling is done using require, revert and assert keywords.
@@ -22,21 +22,17 @@ contract error {
 
         require( _value>20, "Input must be greater than 20");
         }
-    
-
-function testRevert(uint _value) public pure {
+    function testRevert(uint _value) public pure {
     if( _value<= 100){
         revert("Input must be greater than 100");
     }
-
-
-}
-uint public num;
-function testAssert() public view{
+    }
+    uint public num;
+    function testAssert() public view{
     assert(num== 0);
     
-}
-}
+    }
+    }
 
 To compile the code, press CRTL+ SHIFT+P  then select Solidity compile contract and the program is compile sucessfully will be shown in console 
 ## Authors
